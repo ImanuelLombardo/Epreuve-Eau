@@ -18,37 +18,43 @@
 // 1. FONCTIONS //
 //////////////////
 
-for(let centaine = 0; centaine < 10; centaine++) {
-  for(let dizaine = 0; dizaine < 10; dizaine++) {
-    for(let unite = 0; unite < 10; unite++) {
-      if(centaine !== dizaine &&
-        centaine !== unite &&
-        dizaine !== unite) {
-          if(dizaine < unite &&
+function combinationThreeNumber() {
+  for(let centaine = 0; centaine < 10; centaine++) {
+    for (let dizaine = 0; dizaine < 10; dizaine++) {
+      for (let unite = 0; unite < 10; unite++) {
+        if (centaine !== dizaine &&
+          centaine !== unite &&
+          dizaine !== unite) {
+          if (dizaine < unite &&
             centaine < dizaine) {
             console.log(`${centaine}${dizaine}${unite}`);
           }
+        };
       };
     };
   };
-};
+}
 
 //////////////////////////
 // 2. GESTION D'ERREURS //
 //////////////////////////
 
+// XXXXXXXXXXXXXXXXXXXXXXXX
+
 ////////////////
 // 3. PARSING //
 ////////////////
 
-// PARSING PAS BESOIN
+// XXXXXXXXXXXXXXXXXXXXXXXX
 
 ///////////////////
 // 4. RESOLUTION //
 ///////////////////
 
-// displayUnikThreeNumber();
+// XXXXXXXXXXXXXXXXXXXXXXXX
 
 //////////////////////////
 // 5. AFFICHAGE RESULAT //
 //////////////////////////
+
+combinationThreeNumber();
