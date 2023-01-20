@@ -24,7 +24,10 @@ for(let centaine = 0; centaine < 10; centaine++) {
       if(centaine !== dizaine &&
         centaine !== unite &&
         dizaine !== unite) {
-          console.log(`${centaine}${dizaine}${unite}`);
+          if(dizaine < unite &&
+            centaine < dizaine) {
+            console.log(`${centaine}${dizaine}${unite}`);
+          }
       };
     };
   };
